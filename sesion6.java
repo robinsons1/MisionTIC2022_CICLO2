@@ -74,7 +74,7 @@ class Producto {
     //DEFINO ATRIBUTOS 
     private int codigo, cantidad_bodega, cantidad_minima;
     private double precio;
-    private static double descuento=0.01;
+    public static double descuento=0.01;
 
     //DEFINO CONSTRUCTORES
     public Producto(int codigo1, double precio1,int cantidad_bodega1, int cantidad_minima1){
@@ -106,13 +106,13 @@ class Producto {
 
     public static double p_descuento(){return descuento;} // ES NECESARIO?
 
-    //DEFINO METODOS GET
+    //DEFINO METODOS GET - ENCAPSULAMIENTO
     public int getcodigo(){return codigo;}
     public double getprecio(){return precio;} 
     public int getinventario(){return cantidad_bodega;} 
     public int getminima(){return cantidad_minima;} 
 
-    //DEFINO METODOS SET
+    //DEFINO METODOS SET - ENCAPSULAMIENTO
     public void setcodigo(int codigo){this.codigo=codigo;}
     public void setprecio(double precio){this.precio=precio;}
     public void setinventario(int inventario){this.cantidad_bodega=inventario;}
