@@ -32,7 +32,7 @@ public class reto2 {
         int cuenta=0;
         double menor=cuerpos[0].getirca();
         for(int i=0;i<N;i++){
-            if(cuerpo.nivel(cuerpos[i])=="SIN RIESGO"){
+            if(cuerpo.nivel(cuerpos[i])=="BAJO"){
                 System.out.print(cuerpos[i].getnombre()+" ");
                 cuenta++;
             }

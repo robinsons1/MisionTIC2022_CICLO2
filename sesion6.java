@@ -1,4 +1,4 @@
-import java.util.*;
+/*import java.util.*;
 
 public class sesion6 {
     public static void main(String[] args) throws Exception {
@@ -118,4 +118,4 @@ class Producto {
     public void setinventario(int inventario){this.cantidad_bodega=inventario;}
     public void setminima(int minima){this.cantidad_minima=minima;}
 
-}
+}*/
