@@ -1,0 +1,23 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Connect {
+
+    public Connection connect() {
+        // Ruta logica donde está creada la base de datos a usar
+        String url = "jdbc:sqlite:-------path logico/archivo-base-de datos.db--------";
+        // EJEMPLO: String url = "jdbc:sqlite:C:/Users/db/almacen.db";
+
+        Connection conn = null;
+
+        try {
+            // Creamos la conexión con la clase DriverManager
+            conn = DriverManager.getConnection(url);
+            System.out.println("Connection to SQLite has been stablished!!!");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return conn;
+    }
+}
